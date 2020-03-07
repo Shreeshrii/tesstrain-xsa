@@ -20,4 +20,13 @@ Replace the top layer training is being done using [2 fonts](langdata/xsa.fontsl
 
 ## Evaluation Results
 
-See [reports](reports).
+See [reports](reports/checkpointeval.txt). 
+
+Currently best accuracy for both fonts seems to be the following:
+
+------------------------------------------------------------------- Arabic  xsa-xsaLayer_0.869_2978_7700
+------------------------------------------------------------------- Arabic xsa-Quivira-xsaLayer_0.869_2978_7700
+   83.30%  Accuracy
+------------------------------------------------------------------- Arabic xsa-Segoe_UI_Historic-xsaLayer_0.869_2978_7700
+   81.60%  Accuracy
+
