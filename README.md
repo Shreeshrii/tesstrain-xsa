@@ -5,20 +5,21 @@ Finetune Training and OCR evaluation of Tesseract 5.0.0 Alpha for Sabaean langua
 
 OCR evaluation is done using [ISRI Analytic Tools for OCR Evaluation with UTF-8 support](https://github.com/eddieantonio/ocreval) and  and [The ocrevalUAtion tool](https://sites.google.com/site/textdigitisation/ocrevaluation).
 
-## xsa - Sabaean language in Ancient South Arabian script
+## Sabaean language in Ancient South Arabian script
 
-Replace the top layer training is being done using [2 fonts](langdata/xsa.fontslist.txt). The sample [training text](langdata/xsa.txt) is scraped from google search.
+Replace the top layer training was done using two fonts. The sample training text was scraped via google search.
 
-## Training Steps
+### Training Steps
 
-* Update [training text](langdata/xsa.txt)
+* Make [training text](langdata/xsa.txt)
 * List [available fonts that can render the training text](langdata/xsa.fontslist.txt)
 * Update fonts directory unicodefontdir in [txt2lstmf.sh](txt2lstmf.sh)
 * Run [txt2lstmf.sh](txt2lstmf.sh) to create the images, ground truth and lstmf files in [gt/xsa](gt/xsa)
 * Run [trainlayer.sh](trainlayer.sh) to download the starting ara.traineddata and other files and start the training via makefile
 * Run [checkpointeval.sh](checkpointeval.sh) to evaluate the accuracy of different checkpoints.
+* Resulting traineddata file, which can be used as starting model for further training, is at [best_xsa1. traineddata](best_xsa1. traineddata).
 
-## Evaluation Results
+### Evaluation Results
 
 See [reports](reports/checkpointeval.txt). 
 
