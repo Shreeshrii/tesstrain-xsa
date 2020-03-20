@@ -37,5 +37,13 @@ Qataban, one of the fonts used, was [rendering space as a square box with 00 20]
 
 So, line images for it were created with a wordlist type of [training text with no spaces](https://github.com/Shreeshrii/tesstrain-xsa/blob/best_xsa2/langdata/nospace.training_text) in it. [Training text with spaces](https://github.com/Shreeshrii/tesstrain-xsa/blob/best_xsa2/langdata/xsa.training_text) was used for the [other three fonts](https://github.com/Shreeshrii/tesstrain-xsa/blob/best_xsa2/langdata/xsa.fontslist.txt).
 
+### Evaluation Results
 
+Noto_Sans_Old_South_Arabian   95.21%  Accuracy
+
+Qataban   72.63%  Accuracy
+
+Quivira   95.87%  Accuracy
+
+Segoe_UI_Historic   97.81%  Accuracy
 
