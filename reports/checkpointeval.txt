@@ -1,0 +1,133 @@
+rm: cannot remove 'data/xsa/tessdata_fast/*.traineddata': No such file or directory
+rm: cannot remove 'data/xsa/tessdata_best/*.traineddata': No such file or directory
+mkdir data/xsa/tessdata_best
+mkdir data/xsa/tessdata_fast
+lstmtraining \
+          --stop_training \
+          --continue_from data/xsa/checkpoints/xsaLayer_0.046_24081_396900.checkpoint \
+          --traineddata data/xsa/xsa.traineddata \
+          --model_output data/xsa/tessdata_best/xsaLayer_0.046_24081_396900.traineddata
+Loaded file data/xsa/checkpoints/xsaLayer_0.046_24081_396900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/xsa/checkpoints/xsaLayer_0.046_24081_396900.checkpoint \
+          --traineddata data/xsa/xsa.traineddata \
+          --convert_to_int \
+          --model_output data/xsa/tessdata_fast/xsaLayer_0.046_24081_396900.traineddata
+Loaded file data/xsa/checkpoints/xsaLayer_0.046_24081_396900.checkpoint, unpacking...
+------------------------------------------------------------------- Arabic  -xsaLayer_0.046_24081_396900
+------------------------------------------------------------------- Arabic xsa-Noto_Sans_Old_South_Arabian-xsaLayer_0.046_24081_396900
+ocreval Accuracy Report Version 7.0
+-----------------------------------
+   14878   Characters
+     713   Errors
+   95.21%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   95.21%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+     111      499      103      713   Unmarked
+     111      499      103      713   Total
+
+   Count   Missed   %Right
+   11956      589    95.07   Unassigned
+    2922       21    99.28   ASCII Spacing Characters
+   14878      610    95.90   Total
+
+  Errors   Marked   Correct-Generated
+      78        0   {𐩥}-{𐩲}
+      54        0   {𐩳}-{𐩿}
+      31        0   {𐩴}-{𐩽}
+-----------------------------------------------------------------------------
+------------------------------------------------------------------- Arabic xsa-Qataban-xsaLayer_0.046_24081_396900
+ocreval Accuracy Report Version 7.0
+-----------------------------------
+    3416   Characters
+     935   Errors
+   72.63%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   72.63%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+     246      610       79      935   Unmarked
+     246      610       79      935   Total
+
+   Count   Missed   %Right
+    2872      843    70.65   Unassigned
+     544       13    97.61   ASCII Spacing Characters
+    3416      856    74.94   Total
+
+  Errors   Marked   Correct-Generated
+      45        0   {𐩥}-{𐩲}
+      14        0   {𐩡}-{𐩴}
+      14        0   {𐩵𐩱𐩽𐩵𐩤𐩥...}-{𐩷𐩷𐩭𐩻𐩷𐩹...}
+-----------------------------------------------------------------------------
+------------------------------------------------------------------- Arabic xsa-Quivira-xsaLayer_0.046_24081_396900
+ocreval Accuracy Report Version 7.0
+-----------------------------------
+   15217   Characters
+     628   Errors
+   95.87%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   95.87%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+     222      211      195      628   Unmarked
+     222      211      195      628   Total
+
+   Count   Missed   %Right
+   12069      296    97.55   Unassigned
+    2580       61    97.64   ASCII Spacing Characters
+     540       48    91.11   ASCII Special Symbols
+      28       28     0.00   General Punctuation
+   15217      433    97.15   Total
+
+  Errors   Marked   Correct-Generated
+      44        0   {}-{𐩽}
+-----------------------------------------------------------------------------
+------------------------------------------------------------------- Arabic xsa-Segoe_UI_Historic-xsaLayer_0.046_24081_396900
+ocreval Accuracy Report Version 7.0
+-----------------------------------
+   16170   Characters
+     354   Errors
+   97.81%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   97.81%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+     192      113       49      354   Unmarked
+     192      113       49      354   Total
+
+   Count   Missed   %Right
+   12900      202    98.43   Unassigned
+    2725       63    97.69   ASCII Spacing Characters
+     519       14    97.30   ASCII Special Symbols
+      26       26     0.00   General Punctuation
+   16170      305    98.11   Total
+
+  Errors   Marked   Correct-Generated
+      41        0   {𐩽}-{}
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+*************************************************************************
+data/xsa/tessdata_fast/xsaLayer_0.046_24081_396900.traineddata
