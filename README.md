@@ -21,9 +21,10 @@ Replace the top layer training was done using two fonts. The sample training tex
 
 ### Evaluation Results
 
-Quivira -    83.30%  Accuracy
-
-Segoe_UI_Historic -    81.60%  Accuracy
+| Font  	|  Accuracy 	|
+|---	|---	|
+|Quivira|   	|  83.30%	|
+|Segoe_UI_Historic|   81.60% 	|
 
 See [reports](https://github.com/Shreeshrii/tesstrain-xsa/blob/best_xsa1/reports/checkpointeval.txt) for more details. 
 
@@ -39,11 +40,11 @@ So, line images for it were created with a wordlist type of [training text with 
 
 ### Evaluation Results
 
-Noto_Sans_Old_South_Arabian   95.21%  Accuracy
+| Font  	|  Accuracy 	|
+|---	|---	|
+|  Noto_Sans_Old_South_Arabian 	|  95.21% 	|
+| Qataban  	| 72.63%  	|
+|Quivira|   	|  95.87%	|
+|Segoe_UI_Historic|  97.81% 	|
 
-Qataban   72.63%  Accuracy
-
-Quivira   95.87%  Accuracy
-
-Segoe_UI_Historic   97.81%  Accuracy
-
+See [reports](https://github.com/Shreeshrii/tesstrain-xsa/blob/best_xsa2/reports/checkpointeval.txt) for more details. 
